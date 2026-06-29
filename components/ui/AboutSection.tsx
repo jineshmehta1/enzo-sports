@@ -1,101 +1,115 @@
+﻿"use client";
 import React from 'react';
-import { CertificateIcon}  from './BannerIcon';
+import { Trophy, Target, ShieldCheck, ArrowRight } from 'lucide-react';
 
 const AboutSection: React.FC = () => {
-  return (
-    <section className="py-8 md:py-14 bg-white overflow-hidden">
-      <div className="container mx-auto px-6 md:px-12">
-        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-24">
-          
-          {/* --- Left Column: Images Composition --- */}
-          <div className="w-full lg:w-1/2 relative">
-            <div className="relative w-full max-w-[550px] mx-auto lg:mx-0 h-[450px] sm:h-[500px]">
-              
-              {/* Decorative Dots Pattern (Bottom Left) */}
-              <div className="absolute -bottom-8 -left-8 w-32 h-32 opacity-20 z-0">
-                <svg width="100%" height="100%" viewBox="0 0 100 100" fill="none">
-                  <pattern id="dots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
-                    <circle cx="2" cy="2" r="2" className="text-blue-600" fill="currentColor" />
-                  </pattern>
-                  <rect width="100%" height="100%" fill="url(#dots)" />
-                </svg>
-              </div>
+  // Brand Colors based on the ID Card
+  const navy = "#0a1128";
+  const red = "#d31d24";
 
-              {/* Image 1: Top Left (Teacher/Student) */}
-              <div className="absolute top-0 left-0 w-[70%] h-[60%] z-10">
+  return (
+    <section className="py-12 md:py-24 bg-white overflow-hidden">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-12 max-w-7xl">
+        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
+          
+          {/* --- Left Column: Dynamic Image Composition --- */}
+          {/* Reduced height on mobile to keep the fold balanced */}
+          <div className="w-full lg:w-1/2 relative order-1">
+            <div className="relative w-full max-w-[550px] mx-auto lg:mx-0 h-[380px] sm:h-[480px] md:h-[550px]">
+              
+              {/* Decorative Red Swoosh Background */}
+              <div 
+                className="absolute -top-5 -left-5 w-48 h-48 sm:w-64 sm:h-64 opacity-10 rounded-full blur-3xl pointer-events-none"
+                style={{ backgroundColor: red }}
+              />
+
+              {/* Image 1: Main Action (Athletic Focus) */}
+              <div className="absolute top-0 left-0 w-[75%] sm:w-[80%] h-[60%] sm:h-[65%] z-10 p-1 bg-white shadow-2xl rounded-tr-[60px] sm:rounded-tr-[100px] rounded-bl-[30px] sm:rounded-bl-[40px] rounded-tl-[15px] rounded-br-[15px]">
                 <img 
-                  src="/gallery20.jpeg" 
-                  alt="Teacher guiding student"
-                  className="w-full h-full object-cover rounded-tr-[80px] rounded-bl-[20px] rounded-tl-[20px] rounded-br-[20px] shadow-lg"
+                  src="/a20.jpeg" 
+                  alt="Elite Sports Training"
+                  className="w-full h-full object-cover rounded-tr-[55px] sm:rounded-tr-[90px] rounded-bl-[25px] sm:rounded-bl-[35px] rounded-tl-[12px] rounded-br-[12px]"
                 />
               </div>
 
-              {/* Image 2: Bottom Right (Chess Focus) */}
-              <div className="absolute bottom-4 right-0 w-[70%] h-[60%] z-20">
-                <div className="w-full h-full p-2 bg-white rounded-tl-[80px] rounded-br-[20px] rounded-tr-[20px] rounded-bl-[20px] shadow-xl">
+              {/* Image 2: Detailed Mastery (Chess/Mental Focus) */}
+              <div className="absolute bottom-0 right-0 w-[60%] sm:w-[65%] h-[50%] sm:h-[55%] z-20">
+                <div className="w-full h-full p-2 sm:p-3 bg-white rounded-tl-[60px] sm:rounded-tl-[100px] rounded-br-[30px] sm:rounded-br-[40px] rounded-tr-[15px] rounded-bl-[15px] shadow-[0_20px_50px_rgba(0,0,0,0.15)] border-b-4 sm:border-b-8 border-r-4 sm:border-r-8" style={{ borderColor: navy }}>
                   <img 
-                    src="/gallery19.jpeg" 
-                    alt="Focused chess game"
-                    className="w-full h-full object-cover rounded-tl-[70px] rounded-br-[15px] rounded-tr-[15px] rounded-bl-[15px]"
+                    src="/28.jpeg" 
+                    alt="Strategic Thinking"
+                    className="w-full h-full object-cover rounded-tl-[55px] sm:rounded-tl-[90px] rounded-br-[25px] sm:rounded-br-[35px] rounded-tr-[12px] rounded-bl-[12px]"
                   />
                 </div>
               </div>
-
-              {/* Floating Badge: 100% Success */}
-              <div className="absolute bottom-16 -left-4 sm:left-4 z-30 bg-white p-4 rounded-xl shadow-[0_8px_30px_rgb(0,0,0,0.12)] flex items-center gap-4 animate-bounce-slow">
-                <div className="w-12 h-12 bg-yellow-400 rounded-lg flex items-center justify-center text-white shrink-0">
-                  <CertificateIcon className="w-7 h-7" strokeWidth={2} />
-                </div>
-                <div>
-                  <div className="text-2xl font-extrabold text-[#1a1a4b]">100%</div>
-                  <div className="text-sm font-medium text-gray-500">Success Rate</div>
-                </div>
-              </div>
-
             </div>
           </div>
 
           {/* --- Right Column: Text Content --- */}
-          <div className="w-full lg:w-1/2">
+          <div className="w-full lg:w-1/2 space-y-6 md:space-y-8 order-2">
             
-            {/* Pill Label */}
-            <span className="inline-block px-4 py-1.5 mb-6 text-sm font-semibold text-blue-600 bg-blue-50 rounded-full">
-              Get More About Us
-            </span>
+            <div className="space-y-4">
+              <div className="flex items-center gap-3">
+                <span className="w-8 md:w-10 h-[2px]" style={{ backgroundColor: red }} />
+                <span className="text-[10px] md:text-xs font-black uppercase tracking-[0.3em]" style={{ color: red }}>
+                  All Sports. One Passion.
+                </span>
+              </div>
 
-            {/* Heading */}
-            <h2 className="text-3xl md:text-5xl font-bold text-[#1a1a4b] mb-6 leading-tight">
-              About Checkmate Sensei <span className="relative inline-block px-3 py-1 mt-2 md:mt-0">
-                <span className="absolute inset-0 bg-yellow-400 rounded-lg transform -rotate-2"></span>
-                <span className="relative text-white z-10">Chess</span>
-              </span>
-            </h2>
-
-            {/* Description Text */}
-            <div className="space-y-4 text-gray-600 text-lg leading-relaxed mb-8">
-              <p>
-                At our core, we believe that chess is more than just a game—it's a powerful tool for building confidence, sharpening strategic thinking, and fostering a lifelong love of learning. We are dedicated to providing a supportive and engaging online environment where young minds can thrive.
-              </p>
-              <p>
-                Led by a team of passionate instructors, we offer expert-level coaching for students of all skill levels. Our curriculum is designed to not only teach the fundamentals but also to inspire creativity and critical thinking on the chessboard and beyond.
-              </p>
+              <h2 className="text-3xl sm:text-4xl md:text-6xl font-black uppercase italic tracking-tighter leading-[1] md:leading-[0.95]" style={{ color: navy }}>
+                Building The <br />
+                <span className="relative inline-block text-white px-3 sm:px-4 py-1 mt-2">
+                  <span className="absolute inset-0 skew-x-[-12deg]" style={{ backgroundColor: navy }}></span>
+                  <span className="relative z-10">Elite Legacy</span>
+                </span>
+              </h2>
             </div>
 
-            {/* Profile Section */}
-            <div className="flex items-center gap-4 mt-8 pt-8 border-t border-gray-100">
-              <img 
-                src="/gallery21.jpeg" 
-                alt="CEO Portrait"
-                className="w-16 h-16 rounded-full object-cover shadow-md border-2 border-white ring-2 ring-gray-100"
-              />
-              <div>
-                <p className="text-sm font-semibold text-gray-500 uppercase tracking-wide mb-1">
-                  Founder & CEO, 15 Years of Experience
+            <p className="text-slate-600 text-base md:text-lg leading-relaxed font-medium">
+              Enzo Elite Sports is more than an academy—it’s a premier destination for holistic athletic and strategic evolution. We bridge the gap between raw talent and professional mastery through a scientifically backed curriculum designed for the modern champion.
+            </p>
+
+            {/* Core Values List - Responsive Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              {[
+                { icon: ShieldCheck, title: "Pro Coaching", text: "Expert-led sessions" },
+                { icon: Target, title: "Multi-Sport", text: "Physical & Mental" }
+              ].map((item, idx) => (
+                <div key={idx} className="flex items-center gap-3 p-4 rounded-xl border border-slate-100 bg-slate-50 group hover:border-red-100 transition-colors shadow-sm">
+                  <item.icon className="w-5 h-5 sm:w-6 sm:h-6 shrink-0" style={{ color: red }} />
+                  <div>
+                    <h4 className="font-black uppercase text-[11px] sm:text-xs tracking-wider" style={{ color: navy }}>{item.title}</h4>
+                    <p className="text-[9px] sm:text-[10px] text-slate-500 font-bold uppercase">{item.text}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Profile Section - Responsive Flex */}
+            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-5 md:gap-6 pt-6 md:pt-8 border-t border-slate-100">
+              <div className="relative shrink-0">
+                <img 
+                  src="/director_prashanth.jpg" // Update with actual image path
+                  alt="Prashanth M - Director"
+                  className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl object-cover shadow-xl grayscale hover:grayscale-0 transition-all duration-500"
+                />
+                <div className="absolute -bottom-1 -right-1 sm:-bottom-2 sm:-right-2 w-6 h-6 sm:w-8 sm:h-8 rounded-lg flex items-center justify-center text-white" style={{ backgroundColor: red }}>
+                  <ArrowRight size={14} className="sm:size-4" />
+                </div>
+              </div>
+              
+              <div className="space-y-1">
+                <div className="flex flex-wrap items-center gap-2">
+                   <h4 className="text-xl sm:text-2xl font-black uppercase tracking-tight" style={{ color: navy }}>Prashanth M</h4>
+                   <span className="px-2 py-0.5 sm:px-3 sm:py-1 text-[9px] sm:text-[10px] font-black text-white rounded-md italic" style={{ backgroundColor: red }}>DIRECTOR</span>
+                </div>
+                <p className="text-[10px] sm:text-xs font-bold text-slate-400 uppercase tracking-[0.15em] sm:tracking-[0.2em] leading-tight">
+                  Enzo Elite Sports Director & <br className="sm:hidden" /> Games Organiser
                 </p>
-                <h4 className="text-xl font-bold text-[#1a1a4b]">
-                  Vivek Singh
-                </h4>
-                <p className="text-sm text-gray-400">From India</p>
+                <div className="flex gap-4 mt-2">
+                    <div className="text-[9px] sm:text-[10px] font-bold text-slate-500">IND • BLR</div>
+                    <div className="text-[9px] sm:text-[10px] font-bold text-slate-500">EST. 2024</div>
+                </div>
               </div>
             </div>
 

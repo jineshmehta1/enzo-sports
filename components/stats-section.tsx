@@ -1,168 +1,151 @@
 "use client";
-
 import React, { useState } from "react";
-import Image from "next/image";
-import { 
-  ChevronRight, 
-  MessageCircle, 
-  ChevronDown 
-} from "lucide-react";
+import { Plus, Minus, HelpCircle, Phone, Mail, ArrowRight } from "lucide-react";
 
-// --- FAQ Data ---
-const faqData = [
+const faqs = [
   {
-    question: "Why online chess is better?",
-    answer:
-      "Online chess offers accessibility from anywhere, flexibility in scheduling, instant analysis tools, and the ability to play against opponents globally without travel costs.",
+    question: "What age groups do you cater to?",
+    answer: "We offer specialized programs for children as young as 5 years old up to competitive teenage athletes (18+). Our groups are strictly divided by both age and skill level to ensure optimal development and safety.",
   },
   {
-    question: "What is the right age to start?",
-    answer:
-      "5 to 7 years old is considered the ideal age to start. Chess helps young children develop concentration, pattern recognition, and patience early in their development.",
+    question: "Can my child enroll in multiple sports?",
+    answer: "Absolutely. We encourage 'Multisport Development.' Our schedule is designed so that students can attend multiple programs, such as Skating and Chess or Soccer and Swimming, without overlapping slots.",
   },
   {
-    question: "Why Checkmate Sensei Academy?",
-    answer:
-      "We offer FIDE-rated trainers, a structured curriculum, regular tournaments, and a fun, interactive learning environment tailored specifically for children.",
+    question: "Do you provide equipment for the trial session?",
+    answer: "Yes! For your first trial session, we provide all necessary equipment (skates, chess boards, soccer balls). If you choose to enroll, our coaches will provide a gear list tailored to your child's level.",
   },
   {
-    question: "Do we get a completion certificate?",
-    answer:
-      "Yes, every student receives a certificate of completion upon finishing their specific level and passing the assessment.",
+    question: "Who are the coaches at Enzo Elite Sports?",
+    answer: "Our coaching staff consists of former national-level athletes, certified FIDE chess instructors, and professional physical educators. Every coach undergoes rigorous background checks and safety training.",
+  },
+  {
+    question: "What is your refund policy for monthly memberships?",
+    answer: "We offer flexible monthly billing. If you need to pause or cancel, simply notify us 7 days before the next billing cycle. We do not provide partial refunds for mid-month cancellations.",
+  },
+  {
+    question: "Are there competitive opportunities and tournaments?",
+    answer: "Yes. We regularly host internal leagues and sponsor our elite students for regional and national level tournaments in Chess, Skating, and Soccer to provide them with real competitive exposure.",
   },
 ];
 
-export default function FaqSection() {
+const FAQSection: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
-  const toggleAccordion = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
-  };
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
+  // Brand Colors
+  const electricBlue = "#0066FF";
+  const enzoRed = "#d31d24";
+  const navyBlue = "#0a1128";
 
   return (
-    <section className="relative min-h-screen bg-white py-12 lg:py-24 font-sans overflow-hidden">
-      
-      {/* --- Abstract Floating Dot (Top Center) --- */}
-      <div className="absolute top-4 left-1/2 -translate-x-1/2 w-3 h-3 bg-[#5C4EE5] rounded-full opacity-80" />
-
-      <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+    <section className="py-16 md:py-24 bg-white overflow-hidden">
+      <div className="container mx-auto px-4 md:px-6 max-w-7xl">
+        <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
           
-          {/* --- LEFT COLUMN: FAQ Content --- */}
-          {/* Mobile: Order 2 (Bottom), Desktop: Order 1 (Left) */}
-          <div className="order-2 lg:order-1">
-            
-            {/* Badge */}
-            <div className="inline-block px-4 py-1.5 rounded-full bg-[#F3F0FF] mb-4 lg:mb-6">
-              <span className="text-[#5C4EE5] font-semibold text-xs md:text-sm uppercase tracking-wider">FAQ's</span>
+          {/* --- Left Column: Header & Support --- */}
+          <div className="w-full lg:w-1/3 space-y-8">
+            <div className="space-y-4 text-left">
+              <div className="flex items-center gap-3">
+                <span className="h-[2px] w-10 md:w-12 bg-[#d31d24]" />
+                <span className="text-[10px] md:text-[11px] font-black uppercase tracking-[0.4em] text-[#0066FF]">
+                  Enzo Support
+                </span>
+              </div>
+              <h2 className="text-3xl md:text-4xl font-black text-[#0a1128] leading-tight uppercase italic tracking-tighter">
+                Frequently Asked <br />
+                <span className="text-[#d31d24] not-italic">Questions</span>
+              </h2>
+              <p className="text-slate-500 text-sm md:text-base font-medium leading-relaxed max-w-md">
+                Everything you need to know about joining the Enzo Elite family. If you don't find your answer here, our team is ready to help.
+              </p>
             </div>
 
-            {/* Title */}
-            <h2 className="text-3xl md:text-4xl font-extrabold text-[#0F172A] mb-8 lg:mb-10 leading-tight">
-              Frequently Asked <br className="hidden md:block"/> Questions
-            </h2>
+            {/* Red Theme Support Card - Responsive Padding */}
+            <div className="p-6 md:p-8 bg-[#0a1128] rounded-[2rem] md:rounded-[2.5rem] text-white relative overflow-hidden shadow-2xl border-b-8 border-[#d31d24]">
+              <div className="relative z-10 space-y-6">
+                <div className="w-12 h-12 md:w-14 md:h-14 bg-[#d31d24] rounded-2xl flex items-center justify-center shadow-lg shadow-red-600/30">
+                  <HelpCircle className="w-6 h-6 md:w-7 md:h-7 text-white" />
+                </div>
+                <h3 className="text-xl md:text-2xl font-black uppercase tracking-tight">Need More help?</h3>
+                
+                <div className="space-y-4">
+                  <a href="tel:+917259582089" className="flex items-center gap-3 md:gap-4 group">
+                    <div className="w-9 h-9 md:w-10 md:h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-[#0066FF] transition-colors shrink-0">
+                        <Phone className="w-3.5 h-3.5 md:w-4 md:h-4 text-[#0066FF] group-hover:text-white" />
+                    </div>
+                    <span className="text-xs md:text-sm font-bold tracking-tight">+91 7259582089</span>
+                  </a>
+                  <a href="mailto:enzosportsblr@gmail.com" className="flex items-center gap-3 md:gap-4 group">
+                    <div className="w-9 h-9 md:w-10 md:h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-[#0066FF] transition-colors shrink-0">
+                        <Mail className="w-3.5 h-3.5 md:w-4 md:h-4 text-[#0066FF] group-hover:text-white" />
+                    </div>
+                    <span className="text-xs md:text-sm font-bold break-all tracking-tight">enzosportsblr@gmail.com</span>
+                  </a>
+                </div>
 
-            {/* Accordion Items */}
-            <div className="space-y-3 lg:space-y-4">
-              {faqData.map((item, index) => (
+                <button className="w-full py-3.5 md:py-4 bg-[#d31d24] hover:bg-[#0066FF] text-white rounded-xl md:rounded-2xl text-[10px] font-black uppercase tracking-widest transition-all shadow-lg shadow-red-600/20">
+                    Download Brochure
+                </button>
+              </div>
+              <div className="absolute -bottom-10 -right-10 w-32 h-32 md:w-40 md:h-40 bg-[#d31d24]/10 rounded-full blur-3xl" />
+            </div>
+          </div>
+
+          {/* --- Right Column: Accordion --- */}
+          <div className="w-full lg:w-2/3 space-y-3 md:space-y-4">
+            {faqs.map((faq, index) => {
+              const isOpen = openIndex === index;
+              return (
                 <div 
                   key={index} 
-                  className="bg-[#F8F9FA] rounded-xl lg:rounded-2xl overflow-hidden transition-all duration-300 border border-transparent hover:border-gray-200"
+                  className={`group transition-all duration-300 border border-slate-100 ${
+                    isOpen 
+                      ? "bg-slate-50 rounded-2xl md:rounded-3xl p-5 md:p-8 border-l-4 md:border-l-8 border-l-[#d31d24] shadow-xl" 
+                      : "bg-white p-4 md:p-6 hover:bg-slate-50 rounded-xl md:rounded-2xl"
+                  }`}
                 >
                   <button
-                    onClick={() => toggleAccordion(index)}
-                    className="w-full flex items-center justify-between p-4 md:p-6 text-left focus:outline-none group select-none"
+                    onClick={() => setOpenIndex(isOpen ? null : index)}
+                    className="w-full flex items-center justify-between text-left"
                   >
-                    <span className={`text-[#0F172A] font-bold text-sm md:text-lg pr-4 transition-colors ${openIndex === index ? 'text-[#5C4EE5]' : ''}`}>
-                      {item.question}
-                    </span>
-                    <div className={`flex-shrink-0 w-6 h-6 rounded-full flex items-center justify-center transition-transform duration-300 bg-white shadow-sm ${openIndex === index ? 'rotate-90 bg-[#5C4EE5] text-white' : 'rotate-0 text-[#0F172A]'}`}>
-                      <ChevronRight className="w-4 h-4 md:w-5 md:h-5" strokeWidth={3} />
+                    <div className="flex items-center gap-3 md:gap-4">
+                        <span className={`text-[10px] md:text-xs font-black shrink-0 ${isOpen ? "text-[#d31d24]" : "text-slate-300"}`}>
+                            0{index + 1}
+                        </span>
+                        <span className={`text-sm sm:text-base md:text-xl font-black uppercase tracking-tight transition-colors pr-2 ${
+                        isOpen ? "text-[#0a1128]" : "text-[#0a1128] group-hover:text-[#0066FF]"
+                        }`}>
+                        {faq.question}
+                        </span>
+                    </div>
+                    <div className={`shrink-0 w-8 h-8 md:w-10 md:h-10 rounded-lg md:rounded-xl flex items-center justify-center transition-all ${
+                      isOpen ? "bg-[#d31d24] text-white rotate-180 shadow-lg shadow-red-600/20" : "bg-slate-100 text-slate-400"
+                    }`}>
+                      {isOpen ? <Minus className="w-4 h-4 md:w-5 md:h-5" /> : <Plus className="w-4 h-4 md:w-5 md:h-5" />}
                     </div>
                   </button>
                   
-                  {/* Answer */}
-                  <div 
-                    className={`px-4 md:px-6 transition-[max-height,opacity,padding] duration-500 ease-in-out overflow-hidden ${
-                      openIndex === index 
-                        ? "max-h-[500px] pb-4 md:pb-6 opacity-100" // Increased max-h for mobile wrapping
-                        : "max-h-0 opacity-0"
-                    }`}
-                  >
-                    <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                      {item.answer}
-                    </p>
+                  <div className={`overflow-hidden transition-all duration-500 ease-in-out ${
+                    isOpen ? "max-h-[300px] opacity-100 mt-4 md:mt-6" : "max-h-0 opacity-0"
+                  }`}>
+                    <div className="pl-6 md:pl-8 border-l border-slate-200">
+                        <p className="text-slate-600 leading-relaxed font-medium text-xs md:text-base">
+                        {faq.answer}
+                        </p>
+                        <div className="mt-4 flex items-center gap-2 text-[#0066FF] font-black uppercase tracking-widest text-[9px] md:text-[10px] hover:translate-x-1 transition-transform cursor-pointer">
+                            Learn More <ArrowRight className="w-2.5 h-2.5 md:w-3 md:h-3" />
+                        </div>
+                    </div>
                   </div>
                 </div>
-              ))}
-            </div>
+              );
+            })}
           </div>
 
-          {/* --- RIGHT COLUMN: Image & Graphics --- */}
-          {/* Mobile: Order 1 (Top), Desktop: Order 2 (Right) */}
-          <div className="order-1 lg:order-2 relative flex justify-center lg:justify-end mb-8 lg:mb-0">
-            <div className="relative w-full max-w-[350px] md:max-w-[450px] lg:max-w-[500px] mx-auto">
-              
-              {/* SVG Graphic: Pink Sun (Top Left) */}
-              <div className="absolute -top-4 -left-4 md:-top-6 md:-left-8 z-0 scale-75 md:scale-100">
-                <svg width="60" height="60" viewBox="0 0 50 50" fill="none">
-                  <circle cx="25" cy="25" r="10" stroke="#FF00CC" strokeWidth="2.5" />
-                  <path d="M25 5L25 10M25 40L25 45M45 25L40 25M10 25L5 25M39.14 10.86L35.6 14.4M14.4 35.6L10.86 39.14M39.14 39.14L35.6 35.6M14.4 14.4L10.86 10.86" stroke="#FF00CC" strokeWidth="2.5" strokeLinecap="round" />
-                </svg>
-              </div>
-
-              {/* SVG Graphic: Teal Squiggle (Top Right) */}
-              <div className="absolute -top-8 -right-2 md:-top-12 md:-right-4 z-0 scale-75 md:scale-100">
-                <svg width="80" height="40" viewBox="0 0 100 40" fill="none">
-                  <path d="M5 25C15 5 25 35 35 25C45 15 55 35 65 25C75 15 85 35 95 20" stroke="#00CC99" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
-                </svg>
-              </div>
-
-              {/* Main Image */}
-              <div className="relative z-10 w-full h-auto">
-                {/* 
-                   Replace 'knight-think.png' with your actual image path.
-                   Make sure the image is in the /public folder of your Next.js project.
-                */}
-                <img 
-                  src="/knight-think.png" 
-                  alt="Cartoon Knight Thinking"
-                  className="w-full h-auto object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-500"
-                />
-              </div>
-            </div>
-          </div>
         </div>
       </div>
-
-      {/* --- FIXED FLOATING BUTTONS --- */}
-
-      {/* WhatsApp Chat Button (Optional - Uncomment if needed) */}
-      {/* <div className="fixed bottom-6 left-6 z-50 animate-bounce-slow">
-        <a 
-          href="https://wa.me/1234567890" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="bg-[#25D366] hover:bg-[#20b858] text-white px-4 py-3 rounded-full shadow-lg flex items-center gap-2 font-semibold transition-transform hover:scale-105"
-        >
-          <MessageCircle className="w-5 h-5 fill-white" />
-          <span className="hidden md:inline">Chat</span>
-        </a>
-      </div> */}
-
-      {/* Scroll to Top Button */}
-      <button 
-        onClick={scrollToTop}
-        className="fixed bottom-6 right-6 z-50 w-10 h-10 md:w-12 md:h-12 bg-[#5C4EE5] hover:bg-[#4a3ec2] rounded-full flex items-center justify-center shadow-lg transition-transform hover:-translate-y-1 active:scale-95"
-        aria-label="Scroll to top"
-      >
-        <ChevronDown className="w-5 h-5 md:w-6 md:h-6 text-white rotate-180" strokeWidth={2.5} />
-      </button>
-
     </section>
   );
-}
+};
+
+export default FAQSection;

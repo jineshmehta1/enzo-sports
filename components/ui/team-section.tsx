@@ -33,8 +33,8 @@ export default function TeamSection() {
               <div className="relative rounded-[2rem] overflow-hidden shadow-2xl border-[6px] border-white aspect-[3/4]">
                  {/* Replaced with a placeholder closer to a professional headshot aspect ratio */}
                  <Image 
-                  src="/viveksir.jpeg" 
-                  alt="Vivek Singh" 
+                  src="/director-portrait.jpg" 
+                  alt="Prashanth M" 
                   fill
                   className="object-cover"
                   priority
@@ -42,8 +42,8 @@ export default function TeamSection() {
                 
                 {/* Overlay Name Tag */}
                 <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black/80 to-transparent p-6 pt-20">
-                    <h3 className="text-white text-2xl font-bold">Vivek Singh</h3>
-                    <p className="text-purple-200 font-medium">Founder & Head Coach</p>
+                    <h3 className="text-white text-2xl font-bold">Prashanth M</h3>
+                    <p className="text-purple-200 font-medium">Director & Head Coach</p>
                 </div>
               </div>
 
@@ -69,19 +69,19 @@ export default function TeamSection() {
             >
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-purple-50 border border-purple-100 text-purple-700 font-semibold text-sm mb-6">
                 <Medal className="w-4 h-4" />
-                <span>International Rated Player</span>
+                <span>Director, Enzo Elite Sports</span>
               </div>
               
               <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-                Mastering the Game with <br />
+                Training Champions with <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
-                  Checkmate Sensei
+                  Enzo Elite Sports
                 </span>
               </h2>
 
               <div className="prose prose-lg text-gray-600 mb-8">
                 <p>
-                  Vivek Singh is an International Chess Player and a dedicated professional chess coach with over 12 years of coaching experience. He has trained students across all levels—from beginners taking their first steps in chess to competitive players participating in state and national-level tournaments.
+                  Prashanth M is the Director and Head Coach of Enzo Elite Sports, bringing years of professional coaching experience across multiple sports disciplines. He has trained students across all levels—from beginners to competitive athletes participating in state and national-level tournaments.
                 </p>
               </div>
 

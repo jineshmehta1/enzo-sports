@@ -1,134 +1,102 @@
-"use client";
+﻿"use client";
+import React from "react";
+import { ArrowRightIcon, Trophy } from "lucide-react";
 
-import React, { useState, useEffect } from "react";
-import { 
-  ArrowRight, 
-  Trophy, 
-  Star, 
-  Users, 
-  Clock,
-  ShieldCheck,
-  Crown
-} from "lucide-react";
-// 1. Import the global hook
-import { useDemoModal } from "@/context/DemoContext";
-
-export default function HeroSection() {
-  const [mounted, setMounted] = useState(false);
-  
-  // 2. Initialize the modal trigger
-  const { openDemoModal } = useDemoModal();
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+const Hero: React.FC = () => {
+  // Brand Colors
+  const electricBlue = "#0066FF";
+  const enzoRed = "#d31d24";
+  const navyBlue = "#0a1128";
 
   return (
-    <section className="relative min-h-screen bg-slate-50 flex items-center pt-28 pb-16 lg:pt-32 lg:pb-32 overflow-hidden font-sans">
-      
-      {/* BACKGROUND ELEMENTS */}
-      <div className="absolute inset-0 z-0 opacity-[0.03]" 
-           style={{ backgroundImage: 'radial-gradient(#4f46e5 1px, transparent 1px)', backgroundSize: '32px 32px' }}>
+    <section className="relative w-full h-screen min-h-[650px] md:min-h-[800px] flex items-center justify-center overflow-hidden bg-black">
+      {/* --- Background Image --- */}
+      <div className="absolute inset-0 z-0">
+        <img
+          src="/hero.png" 
+          alt="Enzo Elite Sports Programs"
+          className="w-full h-full object-cover object-center"
+        />
+        
+        {/* 
+            RESPONSIVE OVERLAYS: 
+            Heavier dark tint on mobile to ensure text readability 
+            over smaller, higher-density screens.
+        */}
+        <div className="absolute inset-0 bg-black/40 md:bg-black/20 z-10" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0a1128]/80 via-transparent to-[#0a1128]/90 z-10" />
+        
+        {/* Side vignettes to keep focus on center text */}
+        <div className="hidden md:block absolute inset-y-0 left-0 w-1/4 bg-gradient-to-r from-black/60 to-transparent z-10" />
+        <div className="hidden md:block absolute inset-y-0 right-0 w-1/4 bg-gradient-to-l from-black/60 to-transparent z-10" />
       </div>
 
-      <div className="absolute top-0 right-0 -translate-y-1/4 translate-x-1/4 w-[300px] md:w-[600px] h-[300px] md:h-[600px] bg-indigo-200/40 rounded-full blur-3xl filter opacity-50 pointer-events-none"></div>
-      <div className="absolute bottom-0 left-0 translate-y-1/4 -translate-x-1/4 w-[250px] md:w-[500px] h-[250px] md:h-[500px] bg-teal-200/40 rounded-full blur-3xl filter opacity-50 pointer-events-none"></div>
-
-      <div className="container mx-auto px-4 md:px-6 lg:px-8 max-w-7xl relative z-10">
-        <div className="grid lg:grid-cols-12 gap-10 lg:gap-8 items-center">
+      {/* --- Centered Hero Content --- */}
+      <div className="relative z-20 container mx-auto px-4 sm:px-6 lg:px-12 text-center">
+        <div className="max-w-[95%] sm:max-w-4xl lg:max-w-5xl mx-auto">
           
-          <div className={`lg:col-span-6 space-y-6 lg:space-y-8 transition-all duration-1000 transform text-center lg:text-left ${mounted ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
-            
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-white border border-indigo-100 shadow-sm text-indigo-900 font-medium text-xs md:text-sm mb-2 mx-auto lg:mx-0">
-              <span className="relative flex h-2.5 w-2.5 md:h-3 md:w-3">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-indigo-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-2.5 w-2.5 md:h-3 md:w-3 bg-indigo-500"></span>
-              </span>
-              New batch starting this weekend!
-            </div>
-
-            <h1 className="text-4xl sm:text-5xl lg:text-[4rem] leading-[1.1] font-display font-bold text-slate-900 tracking-tight">
-              Turn your little <br/>
-              thinker into a <br/>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-violet-600 relative inline-block">
-                Grandmaster
-                <svg className="absolute w-full h-2 md:h-3 -bottom-1 left-0 text-yellow-400/80 -z-10" viewBox="0 0 100 10" preserveAspectRatio="none">
-                   <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="8" fill="none" />
-                </svg>
-              </span>
-            </h1>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 md:gap-4">
-               {[
-                 { icon: Trophy, text: "FIDE Rated Trainers" },
-                 { icon: Clock, text: "Flexible Schedules" },
-                 { icon: ShieldCheck, text: "Beginner Friendly" },
-                 { icon: Users, text: "Small Batch Size" },
-               ].map((item, idx) => (
-                 <div key={idx} className="flex items-center gap-3 text-slate-700 font-medium text-sm md:text-base justify-center lg:justify-start">
-                   <div className="w-8 h-8 rounded-full bg-indigo-50 flex items-center justify-center text-indigo-600 shrink-0">
-                      <item.icon size={16} strokeWidth={2.5} />
-                   </div>
-                   {item.text}
-                 </div>
-               ))}
-            </div>
-
-            {/* CTA BUTTON UPDATED: Removed Link, Added onClick */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-2 md:pt-4 justify-center lg:justify-start">
-              <button 
-                onClick={openDemoModal}
-                className="w-full sm:w-auto group relative px-8 py-4 bg-slate-900 text-white rounded-2xl font-bold text-lg shadow-xl shadow-indigo-900/20 hover:shadow-2xl hover:shadow-indigo-900/40 hover:-translate-y-1 transition-all duration-300 overflow-hidden"
-              >
-                <span className="relative z-10 flex items-center justify-center gap-2">
-                  Book Free Trial Class
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-                </span>
-                <div className="absolute inset-0 bg-gradient-to-r from-indigo-600 to-violet-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </button>
-            </div>
-
-            <div className="flex items-center gap-4 pt-2 justify-center lg:justify-start">
-               <div className="flex -space-x-3">
-                 {[1,2,3,4].map(i => (
-                   <img key={i} src={`https://i.pravatar.cc/100?u=chess${i}`} alt="user" className="w-10 h-10 rounded-full border-2 border-white" />
-                 ))}
-               </div>
-               <div className="text-sm text-left">
-                 <div className="flex text-yellow-500 mb-0.5">
-                   {[1,2,3,4,5].map(i => <Star key={i} size={14} fill="currentColor" />)}
-                 </div>
-                 <p className="text-slate-600 font-medium"><span className="text-slate-900 font-bold">4.9/5</span> from 2,000+ parents</p>
-               </div>
-            </div>
-
+          {/* Top Badge - Scales down on mobile */}
+          <div className="inline-flex items-center gap-2 px-4 py-2 sm:px-6 sm:py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 mb-6 md:mb-8 animate-fade-in shadow-xl">
+            <Trophy className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#0066FF]" />
+            <span className="text-white text-[9px] sm:text-[11px] font-black uppercase tracking-[0.2em] sm:tracking-[0.3em]">
+              The Ultimate Multisport Academy
+            </span>
           </div>
 
-          <div className={`lg:col-span-6 relative mt-8 lg:mt-0 transition-all duration-1000 delay-300 transform ${mounted ? 'translate-x-0 opacity-100' : 'translate-x-10 opacity-0'}`}>
-            <div className="relative z-20 bg-white p-2 md:p-3 rounded-[2rem] md:rounded-[2.5rem] shadow-2xl shadow-slate-200/50 border border-slate-100 max-w-[550px] mx-auto rotate-1 hover:rotate-0 transition-transform duration-500">
-               <div className="relative h-[350px] sm:h-[450px] lg:h-[500px] w-full rounded-[1.5rem] md:rounded-[2rem] overflow-hidden">
-                  <img 
-                    src="9.jpeg" 
-                    alt="Happy kid playing chess"
-                    className="object-cover w-full h-full"
-                  />
-                  <div className="absolute bottom-0 inset-x-0 h-32 bg-gradient-to-t from-black/60 to-transparent"></div>
-               </div>
+          {/* Headline - Dynamic sizing from 2.5rem to 9xl */}
+          <h1 className="text-[2.5rem] sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl font-black text-white uppercase italic tracking-tighter leading-[0.9] sm:leading-[0.85] mb-6 md:mb-8 drop-shadow-2xl">
+            Unleash Your <br />
+            <span className="text-[#0066FF] not-italic drop-shadow-[0_0_30px_rgba(0,102,255,0.3)]">
+              Elite Potential
+            </span>
+          </h1>
 
-               <div className="absolute right-2 top-4 md:-right-6 md:top-6 bg-white p-3 md:p-4 rounded-xl md:rounded-2xl shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-slate-50 flex items-center gap-3 animate-float max-w-[180px] md:max-w-[220px]">
-                  <div className="w-10 h-10 md:w-12 md:h-12 bg-yellow-100 rounded-full flex items-center justify-center shrink-0">
-                     <Crown className="text-yellow-600 fill-yellow-600" size={20} />
-                  </div>
-                  <div>
-                     <p className="text-[10px] md:text-xs text-slate-500 font-semibold uppercase tracking-wider">Achievement</p>
-                     <p className="text-xs md:text-sm font-bold text-slate-900">National Winner</p>
-                  </div>
-               </div>
-            </div>
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[105%] h-[90%] border-2 border-dashed border-indigo-200 rounded-[2.5rem] md:rounded-[3rem] -rotate-2 -z-10"></div>
+          {/* Subtext - Width constrained for readability on all screens */}
+          <p className="text-sm sm:text-lg md:text-xl lg:text-2xl text-white/90 max-w-[280px] sm:max-w-xl md:max-w-2xl lg:max-w-3xl mx-auto mb-10 md:mb-14 font-bold leading-snug sm:leading-tight drop-shadow-lg">
+            Professional training in <span className="text-[#0066FF]">Sports</span>, 
+            <span className="text-[#0066FF]"> Creative Arts</span>, and 
+            <span className="text-[#0066FF]"> Strategic Thinking</span>. 
+            From the field to the chessboard, we build champions.
+          </p>
+
+          {/* Centered CTA Buttons - Stacked on mobile, row on tablet+ */}
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 px-4 sm:px-0">
+            <a
+              href="/booktrial"
+              className="group w-full sm:w-auto flex items-center justify-center gap-3 bg-[#d31d24] hover:bg-[#0066FF] text-white px-8 sm:px-12 py-4 sm:py-5 rounded-full font-black uppercase tracking-widest text-xs sm:text-sm transition-all duration-300 shadow-xl shadow-red-600/20 hover:shadow-blue-600/40 hover:-translate-y-1 active:scale-95"
+            >
+              Start Free Trial
+              <ArrowRightIcon className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform" />
+            </a>
+
+            <a
+              href="/programs"
+              className="w-full sm:w-auto flex items-center justify-center gap-3 bg-white/10 hover:bg-white text-white hover:text-[#0a1128] border border-white/30 hover:border-white backdrop-blur-md px-8 sm:px-12 py-4 sm:py-5 rounded-full font-black uppercase tracking-widest text-xs sm:text-sm transition-all shadow-xl active:scale-95"
+            >
+              Explore Programs
+            </a>
           </div>
+
+          {/* Bottom Indicator - Hidden on small mobile screens to prevent clutter */}
+          <div className="hidden sm:flex absolute bottom-6 md:bottom-10 left-1/2 -translate-x-1/2 flex-col items-center gap-2 opacity-60">
+            <span className="text-[8px] md:text-[10px] font-black uppercase tracking-[0.4em] text-white">Scroll to Explore</span>
+            <div className="w-[2px] h-8 md:h-12 bg-gradient-to-b from-[#0066FF] to-transparent rounded-full" />
+          </div>
+
         </div>
       </div>
+
+      <style jsx>{`
+        .animate-fade-in {
+          animation: fadeIn 1s ease-out;
+        }
+        @keyframes fadeIn {
+          from { opacity: 0; transform: translateY(20px); }
+          to { opacity: 1; transform: translateY(0); }
+        }
+      `}</style>
     </section>
   );
-}
+};
+
+export default Hero;

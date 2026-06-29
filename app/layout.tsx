@@ -11,14 +11,14 @@ import BookDemoModal from "@/components/BookDemoModal"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Checkmate Sensei Academy | Professional Chess Coaching for Kids",
-  description: "Nurturing young minds through strategic chess training. Founded by International Rated Coach Vivek Singh. Expert-led 1:1 and group classes for ages 6-16.",
-  keywords: ["Chess Academy Indirapuram", "Online Chess Classes", "Vivek Singh Chess", "Checkmate Sensei", "FIDE Rated Coaches"],
+  title: "Enzo Elite Sports | Multi-Sport Academy for Champions",
+  description: "Nurturing young champions through elite sports training. Founded by Prashanth M. Professional training in swimming, skating, chess, football, basketball, cricket, music, dance, art, and yoga.",
+  keywords: ["Enzo Elite Sports", "Multi-Sport Academy", "Sports Academy Bangalore", "Prashanth M", "Elite Sports Training"],
   openGraph: {
-    title: "Checkmate Sensei Academy",
-    description: "Transform your child into a strategic thinker. Book a free demo class today.",
-    url: "https://checkmatesensei.com",
-    siteName: "Checkmate Sensei Academy",
+    title: "Enzo Elite Sports",
+    description: "Transform your child into a champion. Book a free trial session today.",
+    url: "https://enzosports.com",
+    siteName: "Enzo Elite Sports",
     locale: "en_IN",
     type: "website",
   },
@@ -39,16 +39,16 @@ export default function RootLayout({
         {
           "@context": "https://schema.org",
           "@type": "SportsOrganization",
-          "name": "Checkmate Sensei Academy",
-          "url": "https://checkmatesensei.com",
-          "logo": "https://checkmatesensei.com/logo.png",
+          "name": "Enzo Elite Sports",
+          "url": "https://enzosports.com",
+          "logo": "https://enzosports.com/logo.png",
           "founder": {
             "@type": "Person",
-            "name": "Vivek Singh"
+            "name": "Prashanth M"
           },
           "address": {
             "@type": "PostalAddress",
-            "streetAddress": "915A, Niti Khand I, Indirapuram",
+            "streetAddress": "Indirapuram",
             "addressLocality": "Ghaziabad",
             "addressRegion": "UP",
             "postalCode": "201014",
@@ -56,13 +56,13 @@ export default function RootLayout({
           },
           "contactPoint": {
             "@type": "ContactPoint",
-            "telephone": "+91-8130627389",
+            "telephone": "+91-7259582089",
             "contactType": "customer service",
-            "email": "checkmatesensei@gmail.com"
+            "email": "enzosportsblr@gmail.com"
           },
           "sameAs": [
-            "https://www.facebook.com/checkmatesensei",
-            "https://www.instagram.com/checkmatesensei"
+            "https://www.facebook.com/enzosports",
+            "https://www.instagram.com/enzosports"
           ]
         }
         `}

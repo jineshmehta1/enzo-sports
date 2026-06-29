@@ -1,0 +1,800 @@
+﻿[
+  {
+    "file": "app\\blogs\\page.tsx",
+    "line": 308,
+    "issue": "Large non-responsive text size",
+    "text": "<h1 className=\"text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-600 bg-clip-text text-transparent\">"
+  },
+  {
+    "file": "app\\bookdemo\\page.tsx",
+    "line": 55,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 bg-white\">"
+  },
+  {
+    "file": "app\\bookdemo\\page.tsx",
+    "line": 90,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 bg-gradient-to-b from-gray-50 to-white\">"
+  },
+  {
+    "file": "app\\bookdemo\\page.tsx",
+    "line": 122,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 bg-gradient-to-br from-purple-900 to-pink-900 relative overflow-hidden\">"
+  },
+  {
+    "file": "app\\bookdemo\\page.tsx",
+    "line": 124,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"absolute top-20 left-20 w-64 h-64 border-2 border-white rounded-full\"></div>"
+  },
+  {
+    "file": "app\\coaches\\page.tsx",
+    "line": 71,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"absolute -top-16 -right-16 h-44 w-44 rounded-full bg-[#0066FF]/10 blur-3xl\" />"
+  },
+  {
+    "file": "app\\courses\\page.tsx",
+    "line": 301,
+    "issue": "Large non-responsive text size",
+    "text": "<h1 className=\"text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-600 bg-clip-text text-transparent\">"
+  },
+  {
+    "file": "app\\events\\page.tsx",
+    "line": 160,
+    "issue": "Large non-responsive text size",
+    "text": "<h1 className=\"text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-600 bg-clip-text text-transparent\">"
+  },
+  {
+    "file": "app\\online-coaching\\page.tsx",
+    "line": 47,
+    "issue": "Large non-responsive text size",
+    "text": "<h1 className=\"text-5xl md:text-7xl font-bold mb-8 bg-gradient-to-r from-blue-700 to-cyan-700 to-emerald-700 bg-clip-text text-transparent\">"
+  },
+  {
+    "file": "app\\quick-pay\\page.tsx",
+    "line": 117,
+    "issue": "Large non-responsive text size",
+    "text": "<h1 className=\"text-5xl font-bold mb-8 bg-gradient-to-r from-white to-cyan-100 bg-clip-text text-transparent\">Quick Pay</h1>"
+  },
+  {
+    "file": "app\\sports\\art-and-craft\\page.tsx",
+    "line": 158,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"grid lg:grid-cols-2 gap-16 xl:gap-24 items-center\">"
+  },
+  {
+    "file": "app\\sports\\art-and-craft\\page.tsx",
+    "line": 193,
+    "issue": "Large fixed dimension",
+    "text": "<div className=\"relative w-full h-[400px] md:h-[500px] lg:h-full min-h-[400px] md:min-h-[500px]\">"
+  },
+  {
+    "file": "app\\sports\\art-and-craft\\page.tsx",
+    "line": 218,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 bg-slate-50\">"
+  },
+  {
+    "file": "app\\sports\\art-and-craft\\page.tsx",
+    "line": 247,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 container mx-auto px-6 max-w-7xl\">"
+  },
+  {
+    "file": "app\\sports\\art-and-craft\\page.tsx",
+    "line": 276,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 bg-[#0a1128] text-white\">"
+  },
+  {
+    "file": "app\\sports\\art-and-craft\\page.tsx",
+    "line": 277,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"container mx-auto px-6 max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center\">"
+  },
+  {
+    "file": "app\\sports\\art-and-craft\\page.tsx",
+    "line": 304,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 container mx-auto px-6 max-w-7xl\">"
+  },
+  {
+    "file": "app\\sports\\art-and-craft\\page.tsx",
+    "line": 305,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"grid lg:grid-cols-2 gap-16 items-center\">"
+  },
+  {
+    "file": "app\\sports\\art-and-craft\\page.tsx",
+    "line": 344,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 px-6\">"
+  },
+  {
+    "file": "app\\sports\\basketball\\page.tsx",
+    "line": 158,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"grid lg:grid-cols-2 gap-16 xl:gap-24 items-center\">"
+  },
+  {
+    "file": "app\\sports\\basketball\\page.tsx",
+    "line": 193,
+    "issue": "Large fixed dimension",
+    "text": "<div className=\"relative w-full h-[400px] md:h-[500px] lg:h-full min-h-[400px] md:min-h-[500px]\">"
+  },
+  {
+    "file": "app\\sports\\basketball\\page.tsx",
+    "line": 218,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 bg-slate-50\">"
+  },
+  {
+    "file": "app\\sports\\basketball\\page.tsx",
+    "line": 247,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 container mx-auto px-6 max-w-7xl\">"
+  },
+  {
+    "file": "app\\sports\\basketball\\page.tsx",
+    "line": 276,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 bg-[#0a1128] text-white\">"
+  },
+  {
+    "file": "app\\sports\\basketball\\page.tsx",
+    "line": 277,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"container mx-auto px-6 max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center\">"
+  },
+  {
+    "file": "app\\sports\\basketball\\page.tsx",
+    "line": 304,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 container mx-auto px-6 max-w-7xl\">"
+  },
+  {
+    "file": "app\\sports\\basketball\\page.tsx",
+    "line": 305,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"grid lg:grid-cols-2 gap-16 items-center\">"
+  },
+  {
+    "file": "app\\sports\\basketball\\page.tsx",
+    "line": 344,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 px-6\">"
+  },
+  {
+    "file": "app\\sports\\chess\\page.tsx",
+    "line": 158,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"grid lg:grid-cols-2 gap-16 xl:gap-24 items-center\">"
+  },
+  {
+    "file": "app\\sports\\chess\\page.tsx",
+    "line": 193,
+    "issue": "Large fixed dimension",
+    "text": "<div className=\"relative w-full h-[400px] md:h-[500px] lg:h-full min-h-[400px] md:min-h-[500px]\">"
+  },
+  {
+    "file": "app\\sports\\chess\\page.tsx",
+    "line": 218,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 bg-slate-50\">"
+  },
+  {
+    "file": "app\\sports\\chess\\page.tsx",
+    "line": 247,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 container mx-auto px-6 max-w-7xl\">"
+  },
+  {
+    "file": "app\\sports\\chess\\page.tsx",
+    "line": 276,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 bg-[#0a1128] text-white\">"
+  },
+  {
+    "file": "app\\sports\\chess\\page.tsx",
+    "line": 277,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"container mx-auto px-6 max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center\">"
+  },
+  {
+    "file": "app\\sports\\chess\\page.tsx",
+    "line": 304,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 container mx-auto px-6 max-w-7xl\">"
+  },
+  {
+    "file": "app\\sports\\chess\\page.tsx",
+    "line": 305,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"grid lg:grid-cols-2 gap-16 items-center\">"
+  },
+  {
+    "file": "app\\sports\\chess\\page.tsx",
+    "line": 344,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 px-6\">"
+  },
+  {
+    "file": "app\\sports\\cricket\\page.tsx",
+    "line": 158,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"grid lg:grid-cols-2 gap-16 xl:gap-24 items-center\">"
+  },
+  {
+    "file": "app\\sports\\cricket\\page.tsx",
+    "line": 193,
+    "issue": "Large fixed dimension",
+    "text": "<div className=\"relative w-full h-[400px] md:h-[500px] lg:h-full min-h-[400px] md:min-h-[500px]\">"
+  },
+  {
+    "file": "app\\sports\\cricket\\page.tsx",
+    "line": 218,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 bg-slate-50\">"
+  },
+  {
+    "file": "app\\sports\\cricket\\page.tsx",
+    "line": 247,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 container mx-auto px-6 max-w-7xl\">"
+  },
+  {
+    "file": "app\\sports\\cricket\\page.tsx",
+    "line": 276,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 bg-[#0a1128] text-white\">"
+  },
+  {
+    "file": "app\\sports\\cricket\\page.tsx",
+    "line": 277,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"container mx-auto px-6 max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center\">"
+  },
+  {
+    "file": "app\\sports\\cricket\\page.tsx",
+    "line": 304,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 container mx-auto px-6 max-w-7xl\">"
+  },
+  {
+    "file": "app\\sports\\cricket\\page.tsx",
+    "line": 305,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"grid lg:grid-cols-2 gap-16 items-center\">"
+  },
+  {
+    "file": "app\\sports\\cricket\\page.tsx",
+    "line": 344,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 px-6\">"
+  },
+  {
+    "file": "app\\sports\\dance\\page.tsx",
+    "line": 158,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"grid lg:grid-cols-2 gap-16 xl:gap-24 items-center\">"
+  },
+  {
+    "file": "app\\sports\\dance\\page.tsx",
+    "line": 193,
+    "issue": "Large fixed dimension",
+    "text": "<div className=\"relative w-full h-[400px] md:h-[500px] lg:h-full min-h-[400px] md:min-h-[500px]\">"
+  },
+  {
+    "file": "app\\sports\\dance\\page.tsx",
+    "line": 218,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 bg-slate-50\">"
+  },
+  {
+    "file": "app\\sports\\dance\\page.tsx",
+    "line": 247,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 container mx-auto px-6 max-w-7xl\">"
+  },
+  {
+    "file": "app\\sports\\dance\\page.tsx",
+    "line": 276,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 bg-[#0a1128] text-white\">"
+  },
+  {
+    "file": "app\\sports\\dance\\page.tsx",
+    "line": 277,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"container mx-auto px-6 max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center\">"
+  },
+  {
+    "file": "app\\sports\\dance\\page.tsx",
+    "line": 304,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 container mx-auto px-6 max-w-7xl\">"
+  },
+  {
+    "file": "app\\sports\\dance\\page.tsx",
+    "line": 305,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"grid lg:grid-cols-2 gap-16 items-center\">"
+  },
+  {
+    "file": "app\\sports\\dance\\page.tsx",
+    "line": 344,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 px-6\">"
+  },
+  {
+    "file": "app\\sports\\football\\page.tsx",
+    "line": 158,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"grid lg:grid-cols-2 gap-16 xl:gap-24 items-center\">"
+  },
+  {
+    "file": "app\\sports\\football\\page.tsx",
+    "line": 193,
+    "issue": "Large fixed dimension",
+    "text": "<div className=\"relative w-full h-[400px] md:h-[500px] lg:h-full min-h-[400px] md:min-h-[500px]\">"
+  },
+  {
+    "file": "app\\sports\\football\\page.tsx",
+    "line": 218,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 bg-slate-50\">"
+  },
+  {
+    "file": "app\\sports\\football\\page.tsx",
+    "line": 247,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 container mx-auto px-6 max-w-7xl\">"
+  },
+  {
+    "file": "app\\sports\\football\\page.tsx",
+    "line": 276,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 bg-[#0a1128] text-white\">"
+  },
+  {
+    "file": "app\\sports\\football\\page.tsx",
+    "line": 277,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"container mx-auto px-6 max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center\">"
+  },
+  {
+    "file": "app\\sports\\football\\page.tsx",
+    "line": 304,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 container mx-auto px-6 max-w-7xl\">"
+  },
+  {
+    "file": "app\\sports\\football\\page.tsx",
+    "line": 305,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"grid lg:grid-cols-2 gap-16 items-center\">"
+  },
+  {
+    "file": "app\\sports\\football\\page.tsx",
+    "line": 344,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 px-6\">"
+  },
+  {
+    "file": "app\\sports\\music\\page.tsx",
+    "line": 158,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"grid lg:grid-cols-2 gap-16 xl:gap-24 items-center\">"
+  },
+  {
+    "file": "app\\sports\\music\\page.tsx",
+    "line": 193,
+    "issue": "Large fixed dimension",
+    "text": "<div className=\"relative w-full h-[400px] md:h-[500px] lg:h-full min-h-[400px] md:min-h-[500px]\">"
+  },
+  {
+    "file": "app\\sports\\music\\page.tsx",
+    "line": 218,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 bg-slate-50\">"
+  },
+  {
+    "file": "app\\sports\\music\\page.tsx",
+    "line": 247,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 container mx-auto px-6 max-w-7xl\">"
+  },
+  {
+    "file": "app\\sports\\music\\page.tsx",
+    "line": 276,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 bg-[#0a1128] text-white\">"
+  },
+  {
+    "file": "app\\sports\\music\\page.tsx",
+    "line": 277,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"container mx-auto px-6 max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center\">"
+  },
+  {
+    "file": "app\\sports\\music\\page.tsx",
+    "line": 304,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 container mx-auto px-6 max-w-7xl\">"
+  },
+  {
+    "file": "app\\sports\\music\\page.tsx",
+    "line": 305,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"grid lg:grid-cols-2 gap-16 items-center\">"
+  },
+  {
+    "file": "app\\sports\\music\\page.tsx",
+    "line": 344,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 px-6\">"
+  },
+  {
+    "file": "app\\sports\\skating\\page.tsx",
+    "line": 158,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"grid lg:grid-cols-2 gap-16 xl:gap-24 items-center\">"
+  },
+  {
+    "file": "app\\sports\\skating\\page.tsx",
+    "line": 193,
+    "issue": "Large fixed dimension",
+    "text": "<div className=\"relative w-full h-[400px] md:h-[500px] lg:h-full min-h-[400px] md:min-h-[500px]\">"
+  },
+  {
+    "file": "app\\sports\\skating\\page.tsx",
+    "line": 218,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 bg-slate-50\">"
+  },
+  {
+    "file": "app\\sports\\skating\\page.tsx",
+    "line": 247,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 container mx-auto px-6 max-w-7xl\">"
+  },
+  {
+    "file": "app\\sports\\skating\\page.tsx",
+    "line": 276,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 bg-[#0a1128] text-white\">"
+  },
+  {
+    "file": "app\\sports\\skating\\page.tsx",
+    "line": 277,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"container mx-auto px-6 max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center\">"
+  },
+  {
+    "file": "app\\sports\\skating\\page.tsx",
+    "line": 304,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 container mx-auto px-6 max-w-7xl\">"
+  },
+  {
+    "file": "app\\sports\\skating\\page.tsx",
+    "line": 305,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"grid lg:grid-cols-2 gap-16 items-center\">"
+  },
+  {
+    "file": "app\\sports\\skating\\page.tsx",
+    "line": 344,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 px-6\">"
+  },
+  {
+    "file": "app\\sports\\swimming\\page.tsx",
+    "line": 158,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"grid lg:grid-cols-2 gap-16 xl:gap-24 items-center\">"
+  },
+  {
+    "file": "app\\sports\\swimming\\page.tsx",
+    "line": 193,
+    "issue": "Large fixed dimension",
+    "text": "<div className=\"relative w-full h-[400px] md:h-[500px] lg:h-full min-h-[400px] md:min-h-[500px]\">"
+  },
+  {
+    "file": "app\\sports\\swimming\\page.tsx",
+    "line": 218,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 bg-slate-50\">"
+  },
+  {
+    "file": "app\\sports\\swimming\\page.tsx",
+    "line": 247,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 container mx-auto px-6 max-w-7xl\">"
+  },
+  {
+    "file": "app\\sports\\swimming\\page.tsx",
+    "line": 276,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 bg-[#0a1128] text-white\">"
+  },
+  {
+    "file": "app\\sports\\swimming\\page.tsx",
+    "line": 277,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"container mx-auto px-6 max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center\">"
+  },
+  {
+    "file": "app\\sports\\swimming\\page.tsx",
+    "line": 304,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 container mx-auto px-6 max-w-7xl\">"
+  },
+  {
+    "file": "app\\sports\\swimming\\page.tsx",
+    "line": 305,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"grid lg:grid-cols-2 gap-16 items-center\">"
+  },
+  {
+    "file": "app\\sports\\swimming\\page.tsx",
+    "line": 344,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 px-6\">"
+  },
+  {
+    "file": "app\\sports\\yoga\\page.tsx",
+    "line": 158,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"grid lg:grid-cols-2 gap-16 xl:gap-24 items-center\">"
+  },
+  {
+    "file": "app\\sports\\yoga\\page.tsx",
+    "line": 193,
+    "issue": "Large fixed dimension",
+    "text": "<div className=\"relative w-full h-[400px] md:h-[500px] lg:h-full min-h-[400px] md:min-h-[500px]\">"
+  },
+  {
+    "file": "app\\sports\\yoga\\page.tsx",
+    "line": 218,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 bg-slate-50\">"
+  },
+  {
+    "file": "app\\sports\\yoga\\page.tsx",
+    "line": 247,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 container mx-auto px-6 max-w-7xl\">"
+  },
+  {
+    "file": "app\\sports\\yoga\\page.tsx",
+    "line": 276,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 bg-[#0a1128] text-white\">"
+  },
+  {
+    "file": "app\\sports\\yoga\\page.tsx",
+    "line": 277,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"container mx-auto px-6 max-w-7xl grid grid-cols-1 lg:grid-cols-2 gap-16 items-center\">"
+  },
+  {
+    "file": "app\\sports\\yoga\\page.tsx",
+    "line": 304,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 container mx-auto px-6 max-w-7xl\">"
+  },
+  {
+    "file": "app\\sports\\yoga\\page.tsx",
+    "line": 305,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"grid lg:grid-cols-2 gap-16 items-center\">"
+  },
+  {
+    "file": "app\\sports\\yoga\\page.tsx",
+    "line": 344,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 px-6\">"
+  },
+  {
+    "file": "app\\terms\\page.tsx",
+    "line": 104,
+    "issue": "Large non-responsive text size",
+    "text": "<h1 className=\"text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-600 bg-clip-text text-transparent\">"
+  },
+  {
+    "file": "components\\features-section.tsx",
+    "line": 35,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 bg-white overflow-hidden\">"
+  },
+  {
+    "file": "components\\features-section.tsx",
+    "line": 47,
+    "issue": "Large non-responsive text size",
+    "text": "<h2 className=\"text-5xl md:text-7xl font-black text-[#0a1128] uppercase italic tracking-tighter leading-[0.9]\">"
+  },
+  {
+    "file": "components\\features-section.tsx",
+    "line": 64,
+    "issue": "Large non-responsive text size",
+    "text": "<p className=\"text-5xl md:text-6xl font-black text-[#0a1128] mb-2 tracking-tighter group-hover:text-[#0066FF] transition-colors\">"
+  },
+  {
+    "file": "components\\recong.tsx",
+    "line": 61,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"flex items-center justify-around gap-8 md:gap-16\">"
+  },
+  {
+    "file": "components\\stats-section.tsx",
+    "line": 41,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 bg-white\">"
+  },
+  {
+    "file": "components\\stats-section.tsx",
+    "line": 43,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"flex flex-col lg:flex-row gap-16\">"
+  },
+  {
+    "file": "components\\testimonials-section.tsx",
+    "line": 87,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"lg:w-1/3 space-y-8 sticky top-24\">"
+  },
+  {
+    "file": "components\\ui\\AboutSection.tsx",
+    "line": 13,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"flex flex-col lg:flex-row items-center gap-12 lg:gap-20\">"
+  },
+  {
+    "file": "components\\ui\\achcta.tsx",
+    "line": 75,
+    "issue": "Large non-responsive text size",
+    "text": "<h3 className=\"text-[15rem] font-black italic text-white leading-none\">ENZO</h3>"
+  },
+  {
+    "file": "components\\ui\\CarriclulamBanner.tsx",
+    "line": 16,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"absolute top-20 left-4 w-3 h-3 bg-blue-600 rounded-full opacity-80\"></div>"
+  },
+  {
+    "file": "components\\ui\\CarriclulamBanner.tsx",
+    "line": 24,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"absolute top-16 right-1/3 opacity-40 pointer-events-none hidden md:block\">"
+  },
+  {
+    "file": "components\\ui\\coaches.tsx",
+    "line": 47,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 bg-white overflow-hidden\">"
+  },
+  {
+    "file": "components\\ui\\coaches.tsx",
+    "line": 75,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"relative z-10 flex flex-col lg:flex-row items-center gap-12 lg:gap-20\">"
+  },
+  {
+    "file": "components\\ui\\coaches.tsx",
+    "line": 182,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"mt-24 pt-12 border-t border-slate-100 flex flex-wrap justify-center items-center gap-12 lg:gap-24 opacity-30 hover:grayscale-0 transition-all duration-700\">"
+  },
+  {
+    "file": "components\\ui\\ContactSection.tsx",
+    "line": 53,
+    "issue": "Large fixed dimension",
+    "text": "<div className=\"absolute top-0 right-0 w-[500px] h-[500px] bg-blue-50 rounded-full blur-[120px] opacity-60 translate-x-1/3 -translate-y-1/3 pointer-events-none\"></div>"
+  },
+  {
+    "file": "components\\ui\\ContactSection.tsx",
+    "line": 183,
+    "issue": "Large fixed dimension",
+    "text": "<div className=\"w-full h-[400px] rounded-2xl md:rounded-[2rem] overflow-hidden shadow-2xl border-8 border-slate-50 relative group\">"
+  },
+  {
+    "file": "components\\ui\\final-cta-section.tsx",
+    "line": 33,
+    "issue": "Large non-responsive text size",
+    "text": "<h2 className=\"text-5xl md:text-7xl font-black text-white leading-[0.9] uppercase italic tracking-tighter\">"
+  },
+  {
+    "file": "components\\ui\\final-cta-section.tsx",
+    "line": 83,
+    "issue": "Large non-responsive text size",
+    "text": "<h3 className=\"text-[20rem] font-black text-white italic leading-none\">ENZO</h3>"
+  },
+  {
+    "file": "components\\ui\\founder.tsx",
+    "line": 12,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 bg-white overflow-hidden\">"
+  },
+  {
+    "file": "components\\ui\\founder.tsx",
+    "line": 14,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"flex flex-col lg:flex-row items-center gap-16 lg:gap-24\">"
+  },
+  {
+    "file": "components\\ui\\GalleryBanner.tsx",
+    "line": 38,
+    "issue": "Large non-responsive text size",
+    "text": "<h1 className=\"text-5xl md:text-7xl font-black text-white uppercase italic tracking-tighter leading-[0.85]\">"
+  },
+  {
+    "file": "components\\ui\\GallerySection.tsx",
+    "line": 167,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"text-center py-32\">"
+  },
+  {
+    "file": "components\\ui\\method.tsx",
+    "line": 98,
+    "issue": "Large non-responsive text size",
+    "text": "<span className=\"text-5xl font-black italic opacity-5 text-[#0a1128] group-hover:opacity-10 transition-opacity\">"
+  },
+  {
+    "file": "components\\ui\\mission.tsx",
+    "line": 12,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 bg-white overflow-hidden\">"
+  },
+  {
+    "file": "components\\ui\\mission.tsx",
+    "line": 101,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"mt-12 flex flex-wrap items-center justify-center gap-10 md:gap-20 opacity-30 grayscale pointer-events-none\">"
+  },
+  {
+    "file": "components\\ui\\premiunstats.tsx",
+    "line": 38,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 bg-white relative overflow-hidden\">"
+  },
+  {
+    "file": "components\\ui\\PricingBanner.tsx",
+    "line": 16,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"absolute top-20 left-4 w-3 h-3 bg-blue-600 rounded-full opacity-80\"></div>"
+  },
+  {
+    "file": "components\\ui\\PricingBanner.tsx",
+    "line": 24,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"absolute top-16 right-1/3 opacity-40 pointer-events-none hidden md:block\">"
+  },
+  {
+    "file": "components\\ui\\PricingSection.tsx",
+    "line": 67,
+    "issue": "Large non-responsive padding",
+    "text": "<section className=\"py-24 bg-gray-50\">"
+  },
+  {
+    "file": "components\\ui\\sportsBanner.tsx",
+    "line": 87,
+    "issue": "Large fixed dimension",
+    "text": "<div className=\"absolute bottom-0 left-0 w-[600px] h-[600px] rounded-full blur-[100px] translate-y-1/3 -translate-x-1/3\" style={{ backgroundColor: data.color }} />"
+  },
+  {
+    "file": "components\\ui\\sportsBanner.tsx",
+    "line": 93,
+    "issue": "Large non-responsive padding",
+    "text": "<div className=\"grid lg:grid-cols-2 gap-16 items-center\">"
+  },
+  {
+    "file": "components\\ui\\sportsBanner.tsx",
+    "line": 107,
+    "issue": "Large non-responsive text size",
+    "text": "<h1 className=\"text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] font-black text-white uppercase italic tracking-tighter leading-[0.85] drop-shadow-2xl\">"
+  },
+  {

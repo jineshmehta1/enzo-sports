@@ -23,7 +23,7 @@ export default function BookDemoModal() {
     setIsSubmitting(true);
 
     // 1. Prepare the WhatsApp Message
-    const whatsappMessage = `*New Demo Booking - Checkmate Sensei Academy*%0A` +
+    const whatsappMessage = `*New Demo Booking - Enzo Elite Sports*%0A` +
       `-------------------------------------------%0A` +
       `*Student Name:* ${formData.studentName}%0A` +
       `*Parent Name:* ${formData.parentName}%0A` +
@@ -33,7 +33,7 @@ export default function BookDemoModal() {
       `*Email:* ${formData.email}%0A` +
       `-------------------------------------------`;
 
-    const whatsappUrl = `https://wa.me/918130627389?text=${whatsappMessage}`;
+    const whatsappUrl = `https://wa.me/917259582089?text=${whatsappMessage}`;
 
     try {
       // 2. Optional: Still send to Google Sheets for your records
