@@ -24,7 +24,7 @@ const MissionVision: React.FC = () => {
                 The Enzo Blueprint
               </span>
             </div>
-            <h2 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black text-[#0a1128] uppercase italic tracking-tighter leading-[0.95]">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-black text-[#0a1128] uppercase italic tracking-tighter leading-[0.95]">
               Driven by <span className="text-[#0066FF] not-italic">Purpose,</span> <br />
               Defined by <span className="relative inline-block">
                 Results.

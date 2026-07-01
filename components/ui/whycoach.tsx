@@ -77,7 +77,7 @@ const WhyOurCoaches: React.FC = () => {
                 The Enzo Advantage
               </span>
             </div>
-            <h2 className="text-3xl sm:text-4xl md:text-6xl font-black text-[#0a1128] uppercase italic tracking-tighter leading-[1] md:leading-none">
+            <h2 className="text-3xl sm:text-4xl md:text-4xl font-black text-[#0a1128] uppercase italic tracking-tighter leading-[1] md:leading-none">
               Why Train With <br className="hidden sm:block" />
               <span className="text-[#0066FF] not-italic">Our Coaches?</span>
             </h2>

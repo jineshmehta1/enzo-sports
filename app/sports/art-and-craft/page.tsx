@@ -16,13 +16,13 @@ const levels = [
     age: "8-12 Years",
     level: "Sketchers",
     desc: "Pencil shading, perspective and watercolors.",
-    img: "https://images.unsplash.com/photo-1517598024396-46c53fb3afdc?q=80&w=600"
+    img: "/art.jpg"
   },
   {
     age: "13-16 Years",
     level: "Creators",
     desc: "Acrylics, canvas work and basic sculpting.",
-    img: "https://images.unsplash.com/photo-1546484396-fb3fade47ea1?q=80&w=600"
+    img: "/canvas.jpeg"
   },
   {
     age: "17+ Years",
@@ -102,12 +102,12 @@ const highlights = [
 ];
 
 const highlightGifs = [
-  "https://media.giphy.com/media/l41lFw057lAJQMwg0/giphy.gif",
-  "https://media.giphy.com/media/3o7TKSjRrfIPjeiVyM/giphy.gif",
-  "https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif",
-  "https://media.giphy.com/media/26AHONQ79FdWZhAIw/giphy.gif",
-  "https://media.giphy.com/media/l0HlSi3AIOM3fAhX2/giphy.gif",
-  "https://media.giphy.com/media/3oEduUy2KjJbH30BNe/giphy.gif"
+ "/prof.jpg",
+  "/small.jpg",
+  "/creative.png",
+  "/focus.png",
+  "/skill.png",
+  "/tour.jpg"
 ];
 
 export default function ArtCraftProgramPage() {

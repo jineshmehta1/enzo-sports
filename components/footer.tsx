@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React, { useState, useEffect } from "react";
 import {
@@ -35,29 +35,31 @@ export function Footer() {
     { name: "Our Coaches", href: "/coaches" },
     { name: "Achievements", href: "/achievements" },
     { name: "Gallery", href: "/gallery" },
+    { name: "Contact", href: "/contact" },
   ];
 
+  // Updated based on Header
   const indoorSports = [
     { name: "Chess", href: "/sports/chess" },
-    { name: "Table Tennis", href: "/sports/table-tennis" },
-    { name: "Badminton", href: "/sports/badminton" },
+    { name: "Music", href: "/sports/music" },
+    { name: "Dance", href: "/sports/dance" },
+    { name: "Art & Craft", href: "/sports/art-and-craft" },
+    { name: "Yoga", href: "/sports/yoga" },
   ];
 
+  // Updated based on Header
   const outdoorSports = [
     { name: "Skating", href: "/sports/skating" },
-    { name: "Soccer", href: "/sports/soccer" },
+    { name: "Football", href: "/sports/football" },
     { name: "Swimming", href: "/sports/swimming" },
     { name: "Basketball", href: "/sports/basketball" },
+    { name: "Cricket", href: "/sports/cricket" },
   ];
 
   return (
     <footer className="relative bg-[#0a1128] text-white overflow-hidden font-sans border-t border-white/5">
       
-      {/* =======================
-          ATHLETIC DECORATION 
-         ======================= */}
-      
-      {/* Background Energy Lines (Sporty Aesthetic) */}
+      {/* Background Aesthetic Elements */}
       <div className="absolute top-0 right-0 w-1/2 h-full opacity-5 pointer-events-none">
          <svg viewBox="0 0 400 400" className="w-full h-full">
             <path d="M0,400 L400,0 M100,400 L400,100 M200,400 L400,200" stroke="white" strokeWidth="20" fill="none" />
@@ -71,9 +73,9 @@ export function Footer() {
           {/* Column 1: Brand Info */}
           <div className="space-y-6">
             <div className="flex flex-col gap-2">
-               <img src="/enzo.png" alt="Enzo Elite Sports" className="h-16 w-auto object-contain" />
+               <img src="/enzo.png" alt="Enzo Elite Sports" className="h-14 w-auto object-contain " />
                <p className="text-slate-400 text-sm leading-relaxed mt-4">
-                 The region's premier multisport academy dedicated to technical mastery, character building, and elite performance.
+                 India's premier multisport academy dedicated to technical mastery, character building, and elite performance.
                </p>
             </div>
 
@@ -93,7 +95,7 @@ export function Footer() {
 
           {/* Column 2: Useful Links */}
           <div>
-             <h4 className="text-sm font-black uppercase tracking-[0.3em] text-[#0066FF] mb-8 flex items-center gap-2">
+             <h4 className="text-sm font-black uppercase tracking-[0.3em] text-[#0066FF] mb-8">
                Quick Links
              </h4>
              <ul className="space-y-4">
@@ -108,27 +110,27 @@ export function Footer() {
              </ul>
           </div>
 
-          {/* Column 3: Sports Categories */}
+          {/* Column 3: Sports Categories (Synchronized with Header) */}
           <div>
              <h4 className="text-sm font-black uppercase tracking-[0.3em] text-[#d31d24] mb-8">
                Our Programs
              </h4>
              <div className="space-y-6">
                 <div>
-                    <p className="text-[10px] font-black uppercase text-slate-500 mb-3 tracking-widest">Indoor</p>
+                    <p className="text-[10px] font-black uppercase text-slate-500 mb-3 tracking-widest">Indoor Disciplines</p>
                     <div className="flex flex-wrap gap-2">
                         {indoorSports.map(s => (
-                            <a key={s.name} href={s.href} className="text-xs font-bold px-3 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10">
+                            <a key={s.name} href={s.href} className="text-[11px] font-bold px-3 py-1.5 rounded-lg bg-white/5 hover:bg-[#0066FF] border border-white/10 transition-colors">
                                 {s.name}
                             </a>
                         ))}
                     </div>
                 </div>
                 <div>
-                    <p className="text-[10px] font-black uppercase text-slate-500 mb-3 tracking-widest">Outdoor</p>
+                    <p className="text-[10px] font-black uppercase text-slate-500 mb-3 tracking-widest">Outdoor Disciplines</p>
                     <div className="flex flex-wrap gap-2">
                         {outdoorSports.map(s => (
-                            <a key={s.name} href={s.href} className="text-xs font-bold px-3 py-1.5 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10">
+                            <a key={s.name} href={s.href} className="text-[11px] font-bold px-3 py-1.5 rounded-lg bg-white/5 hover:bg-[#d31d24] border border-white/10 transition-colors">
                                 {s.name}
                             </a>
                         ))}
@@ -137,10 +139,10 @@ export function Footer() {
              </div>
           </div>
 
-          {/* Column 4: Contact */}
+          {/* Column 4: Contact (Updated for Bangalore) */}
           <div>
              <h4 className="text-sm font-black uppercase tracking-[0.3em] text-[#0066FF] mb-8">
-               Get In Touch
+               Connect
              </h4>
              <div className="space-y-5">
                 <a href="tel:+917259582089" className="flex items-start gap-4 group">
@@ -148,7 +150,7 @@ export function Footer() {
                         <Phone size={14} />
                     </div>
                     <div>
-                        <p className="text-[10px] font-black uppercase text-slate-500">Call Us</p>
+                        <p className="text-[10px] font-black uppercase text-slate-500">Admissions</p>
                         <p className="text-sm font-bold">+91 7259582089</p>
                     </div>
                 </a>
@@ -157,7 +159,7 @@ export function Footer() {
                         <Mail size={14} />
                     </div>
                     <div>
-                        <p className="text-[10px] font-black uppercase text-slate-500">Email</p>
+                        <p className="text-[10px] font-black uppercase text-slate-500">Official Email</p>
                         <p className="text-sm font-bold">enzosportsblr@gmail.com</p>
                     </div>
                 </a>
@@ -166,9 +168,9 @@ export function Footer() {
                         <MapPin size={14} />
                     </div>
                     <div>
-                        <p className="text-[10px] font-black uppercase text-slate-500">Main Center</p>
+                        <p className="text-[10px] font-black uppercase text-slate-500">Academy Hub</p>
                         <p className="text-xs font-medium text-slate-300 leading-relaxed">
-                            Indirapuram, Ghaziabad, India
+                            Bangalore, Karnataka <br /> India
                         </p>
                     </div>
                 </div>
@@ -177,9 +179,7 @@ export function Footer() {
         </div>
       </div>
 
-      {/* =======================
-          BOTTOM BAR 
-         ======================= */}
+      {/* Bottom Bar */}
       <div className="border-t border-white/5 bg-black/20">
         <div className="container mx-auto px-6 py-8">
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
@@ -199,21 +199,17 @@ export function Footer() {
                     </a>
                 </p>
               </div>
-              <div className="flex gap-8 text-[10px] font-black uppercase tracking-widest text-slate-500">
-                 <a href="#" className="hover:text-white transition-colors">Privacy</a>
-                 <a href="#" className="hover:text-white transition-colors">Terms</a>
-                 <a href="#" className="hover:text-white transition-colors">Cookies</a>
-              </div>
+              
             </div>
         </div>
       </div>
 
-      {/* WhatsApp Action Button */}
+      {/* Floating WhatsApp Action */}
       <a
          href="https://wa.me/917259582089"
          target="_blank"
          rel="noopener noreferrer"
-         className="fixed bottom-8 left-8 z-50 flex items-center gap-3 bg-[#25D366] text-white px-5 py-4 rounded-2xl shadow-2xl transition-all duration-300 hover:-translate-y-2 group"
+         className="fixed bottom-8 left-8 z-[60] flex items-center gap-3 bg-[#25D366] text-white px-5 py-4 rounded-2xl shadow-2xl transition-all duration-300 hover:-translate-y-2 group"
       >
          <div className="relative">
             <MessageCircle size={24} fill="currentColor" />
@@ -223,8 +219,8 @@ export function Footer() {
             </span>
          </div>
          <div className="flex flex-col leading-none">
-            <span className="text-[9px] font-black uppercase tracking-widest opacity-80">Online Now</span>
-            <span className="font-black text-sm uppercase tracking-tight">Chat with Coach</span>
+            <span className="text-[9px] font-black uppercase tracking-widest opacity-80 uppercase">Elite Desk</span>
+            <span className="font-black text-sm uppercase tracking-tight">Chat Now</span>
          </div>
       </a>
 
@@ -232,7 +228,7 @@ export function Footer() {
       <button
         onClick={scrollToTop}
         className={`
-          fixed bottom-8 right-8 z-50 p-4 bg-[#d31d24] text-white rounded-2xl shadow-2xl 
+          fixed bottom-8 right-8 z-[60] p-4 bg-[#d31d24] text-white rounded-2xl shadow-2xl 
           transition-all duration-500 transform hover:-translate-y-2
           ${showScrollTop ? 'translate-y-0 opacity-100' : 'translate-y-24 opacity-0 pointer-events-none'}
         `}
@@ -241,13 +237,6 @@ export function Footer() {
         <ArrowUp size={20} strokeWidth={3} />
       </button>
 
-      <style jsx global>{`
-        @keyframes float {
-          0%, 100% { transform: translateY(0); }
-          50% { transform: translateY(-10px); }
-        }
-        .animate-float { animation: float 3s ease-in-out infinite; }
-      `}</style>
     </footer>
   );
 }

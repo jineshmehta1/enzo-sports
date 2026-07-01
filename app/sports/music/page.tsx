@@ -10,25 +10,25 @@ const levels = [
     age: "5-7 Years",
     level: "Little Notes",
     desc: "Rhythm basics, ear training and fun songs.",
-    img: "https://images.unsplash.com/photo-1507838153414-b4b713384a76?q=80&w=600"
+    img: "/begi.jpeg"
   },
   {
     age: "8-12 Years",
     level: "Melody Makers",
     desc: "Reading sheet music and basic instrument skills.",
-    img: "https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?q=80&w=600"
+    img: "/inter.jpeg"
   },
   {
     age: "13-16 Years",
     level: "Harmonics",
     desc: "Advanced techniques, scales and band performance.",
-    img: "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?q=80&w=600"
+    img: "/adv.webp"
   },
   {
     age: "17+ Years",
     level: "Maestros",
     desc: "Composition, improvisation and grade exams.",
-    img: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=600"
+    img: "/adv.jpeg"
   }
 ];
 
@@ -102,12 +102,18 @@ const highlights = [
 ];
 
 const highlightGifs = [
-  "https://media.giphy.com/media/l41lFw057lAJQMwg0/giphy.gif",
-  "https://media.giphy.com/media/3o7TKSjRrfIPjeiVyM/giphy.gif",
-  "https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif",
-  "https://media.giphy.com/media/26AHONQ79FdWZhAIw/giphy.gif",
-  "https://media.giphy.com/media/l0HlSi3AIOM3fAhX2/giphy.gif",
-  "https://media.giphy.com/media/3oEduUy2KjJbH30BNe/giphy.gif"
+  "/prof.jpg",
+  "/small.jpg",
+  "/creative.png",
+  "/focus.png",
+  "/skill.png",
+  "/tour.jpg"
+];
+const levelImages = [
+  "/begi.jpeg",
+  "/inter.jpeg",
+  "/adv.webp",
+  "/adv.jpeg",
 ];
 
 export default function MusicProgramPage() {
@@ -126,6 +132,7 @@ export default function MusicProgramPage() {
       levels={levels}
       curriculum={curriculum}
       faqData={faqData}
+      levelImages={levelImages}  
       faqImage="https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=1200"
       statsImage="https://images.unsplash.com/photo-1511379938547-c1f69419868d?q=80&w=1200"
     />

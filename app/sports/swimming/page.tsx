@@ -10,13 +10,13 @@ const levels = [
     age: "3-5 Years",
     level: "Water Babies",
     desc: "Water familiarization and basic floating.",
-    img: "https://images.unsplash.com/photo-1600965962102-9d260a71890d?q=80&w=600"
+    img: "/babies.jpg"
   },
   {
     age: "6-9 Years",
     level: "Learn to Swim",
     desc: "Freestyle, backstroke and water safety.",
-    img: "https://images.unsplash.com/photo-1519315901367-f34f915de626?q=80&w=600"
+    img: "/learn.jpg"
   },
   {
     age: "10-14 Years",
@@ -28,7 +28,7 @@ const levels = [
     age: "15+ Years",
     level: "Competitive",
     desc: "Race pace training and advanced conditioning.",
-    img: "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=600"
+    img: "/comp.webp"
   }
 ];
 
@@ -102,12 +102,12 @@ const highlights = [
 ];
 
 const highlightGifs = [
-  "https://media.giphy.com/media/l41lFw057lAJQMwg0/giphy.gif",
-  "https://media.giphy.com/media/3o7TKSjRrfIPjeiVyM/giphy.gif",
-  "https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif",
-  "https://media.giphy.com/media/26AHONQ79FdWZhAIw/giphy.gif",
-  "https://media.giphy.com/media/l0HlSi3AIOM3fAhX2/giphy.gif",
-  "https://media.giphy.com/media/3oEduUy2KjJbH30BNe/giphy.gif"
+  "/prof.jpg",
+  "/small.jpg",
+  "/creative.png",
+  "/focus.png",
+  "/skill.png",
+  "/tour.jpg"
 ];
 
 export default function SwimmingProgramPage() {
@@ -127,7 +127,7 @@ export default function SwimmingProgramPage() {
       curriculum={curriculum}
       faqData={faqData}
       faqImage="https://images.unsplash.com/photo-1530549387633-f71f9911bc01?q=80&w=1200"
-      statsImage="https://images.unsplash.com/photo-1530549387633-f71f9911bc01?q=80&w=1200"
+      statsImage="/a29.jpeg"
     />
     </div>
   );

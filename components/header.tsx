@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import React, { useState, useEffect } from "react";
 import { MenuIcon, XIcon, ArrowRightIcon, ChevronDownIcon, Trophy, Users } from "lucide-react";
 import BookDemo from "./ui/bookDemo";

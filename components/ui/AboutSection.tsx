@@ -89,9 +89,9 @@ const AboutSection: React.FC = () => {
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-5 md:gap-6 pt-6 md:pt-8 border-t border-slate-100">
               <div className="relative shrink-0">
                 <img 
-                  src="/director_prashanth.jpg" // Update with actual image path
+                  src="/prashant.png" // Update with actual image path
                   alt="Prashanth M - Director"
-                  className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl object-cover shadow-xl grayscale hover:grayscale-0 transition-all duration-500"
+                  className="w-16 h-16 sm:w-20 sm:h-20 rounded-2xl object-cover shadow-xl hover:grayscale-0 transition-all duration-500"
                 />
                 <div className="absolute -bottom-1 -right-1 sm:-bottom-2 sm:-right-2 w-6 h-6 sm:w-8 sm:h-8 rounded-lg flex items-center justify-center text-white" style={{ backgroundColor: red }}>
                   <ArrowRight size={14} className="sm:size-4" />

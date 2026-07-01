@@ -10,7 +10,7 @@ const levels = [
     age: "Kids (6-12)",
     level: "Sprouts",
     desc: "Fun animal poses and basic focus exercises.",
-    img: "https://images.unsplash.com/photo-1522066898492-3a3fc429de0a?q=80&w=600"
+    img: "/sp.jpeg"
   },
   {
     age: "Teens (13-17)",
@@ -102,12 +102,12 @@ const highlights = [
 ];
 
 const highlightGifs = [
-  "https://media.giphy.com/media/l41lFw057lAJQMwg0/giphy.gif",
-  "https://media.giphy.com/media/3o7TKSjRrfIPjeiVyM/giphy.gif",
-  "https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif",
-  "https://media.giphy.com/media/26AHONQ79FdWZhAIw/giphy.gif",
-  "https://media.giphy.com/media/l0HlSi3AIOM3fAhX2/giphy.gif",
-  "https://media.giphy.com/media/3oEduUy2KjJbH30BNe/giphy.gif"
+ "/prof.jpg",
+  "/small.jpg",
+  "/creative.png",
+  "/focus.png",
+  "/skill.png",
+  "/tour.jpg"
 ];
 
 export default function YogaProgramPage() {
@@ -127,7 +127,7 @@ export default function YogaProgramPage() {
       curriculum={curriculum}
       faqData={faqData}
       faqImage="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1200"
-      statsImage="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?q=80&w=1200"
+      statsImage="/yoga.jpeg"
     />
     </div>
   );

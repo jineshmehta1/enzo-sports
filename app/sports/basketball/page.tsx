@@ -10,19 +10,19 @@ const levels = [
     age: "6-9 Years",
     level: "Rookies",
     desc: "Ball handling, layups and basic rules.",
-    img: "https://images.unsplash.com/photo-1528659109033-68d7120db8aa?q=80&w=600"
+    img: "/basket3.jpg"
   },
   {
     age: "10-13 Years",
     level: "Hustlers",
     desc: "Shooting form, team defense and spacing.",
-    img: "https://images.unsplash.com/photo-1518428135898-356c28f3cb52?q=80&w=600"
+    img: "/basket2.jpeg"
   },
   {
     age: "14-16 Years",
     level: "Varsity",
     desc: "Advanced plays, perimeter defense and athleticism.",
-    img: "https://images.unsplash.com/photo-1542652735873-fb2814816f1c?q=80&w=600"
+    img: "/basket1.jpeg"
   },
   {
     age: "17+ Years",
@@ -102,12 +102,12 @@ const highlights = [
 ];
 
 const highlightGifs = [
-  "https://media.giphy.com/media/l41lFw057lAJQMwg0/giphy.gif",
-  "https://media.giphy.com/media/3o7TKSjRrfIPjeiVyM/giphy.gif",
-  "https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif",
-  "https://media.giphy.com/media/26AHONQ79FdWZhAIw/giphy.gif",
-  "https://media.giphy.com/media/l0HlSi3AIOM3fAhX2/giphy.gif",
-  "https://media.giphy.com/media/3oEduUy2KjJbH30BNe/giphy.gif"
+  "/prof.jpg",
+  "/small.jpg",
+  "/creative.png",
+  "/focus.png",
+  "/skill.png",
+  "/tour.jpg"
 ];
 
 export default function BasketballProgramPage() {

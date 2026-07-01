@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React from "react";
 import SportPageLayout from "@/components/ui/sport-page-layout";
@@ -49,6 +49,13 @@ const highlights = [
   { t: "Tournament Exposure", d: "State & National level entries." },
 ];
 
+const levelImages = [
+  "/beg.jpeg",
+  "/inter.jpg",
+  "/adv.jpg",
+  "/master.webp",
+];
+
 export default function ChessProgramPage() {
   return (
     <div className="bg-white font-sans text-[#0a1128]">
@@ -65,8 +72,9 @@ export default function ChessProgramPage() {
       curriculum={curriculum}
       curriculumDesc="Our curriculum isn't just about pieces. We teach students to analyze patterns, manage their time under pressure, and think three steps ahead in life as well as on the board."
       faqData={faqData}
-      faqImage="https://images.unsplash.com/photo-1586165368502-1bad197a6461?q=80&w=1200"
-      statsImage="https://images.unsplash.com/photo-1529699211952-734e80c4d42b?q=80&w=1200"
+      levelImages={levelImages}  
+      faqImage="/111.jpeg"
+      statsImage="/120.jpeg"
     />
     </div>
   );

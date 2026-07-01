@@ -10,25 +10,25 @@ const levels = [
     age: "4-6 Years",
     level: "Rollers",
     desc: "Balance, posture and basic strides.",
-    img: "https://images.unsplash.com/photo-1506544777-626a5c102a06?q=80&w=600"
+    img: "/70.jpeg"
   },
   {
     age: "7-10 Years",
     level: "Cruisers",
     desc: "Turning, stopping and basic crossovers.",
-    img: "https://images.unsplash.com/photo-1520689914619-bc78b32367ea?q=80&w=600"
+    img: "/skat.webp"
   },
   {
     age: "11-14 Years",
     level: "Speedsters",
     desc: "Advanced edges and speed generation.",
-    img: "https://images.unsplash.com/photo-1596784860363-2bd13437efb9?q=80&w=600"
+    img: "/37.jpeg"
   },
   {
     age: "15+ Years",
     level: "Pro Racers",
     desc: "Inline speed skating and competition prep.",
-    img: "https://images.unsplash.com/photo-1629858694084-26da89d8db12?q=80&w=600"
+    img: "/32.jpeg"
   }
 ];
 
@@ -102,12 +102,12 @@ const highlights = [
 ];
 
 const highlightGifs = [
-  "https://media.giphy.com/media/l41lFw057lAJQMwg0/giphy.gif",
-  "https://media.giphy.com/media/3o7TKSjRrfIPjeiVyM/giphy.gif",
-  "https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif",
-  "https://media.giphy.com/media/26AHONQ79FdWZhAIw/giphy.gif",
-  "https://media.giphy.com/media/l0HlSi3AIOM3fAhX2/giphy.gif",
-  "https://media.giphy.com/media/3oEduUy2KjJbH30BNe/giphy.gif"
+ "/prof.jpg",
+  "/small.jpg",
+  "/creative.png",
+  "/focus.png",
+  "/skill.png",
+  "/tour.jpg"
 ];
 
 export default function SkatingProgramPage() {
@@ -127,7 +127,7 @@ export default function SkatingProgramPage() {
       curriculum={curriculum}
       faqData={faqData}
       faqImage="https://images.unsplash.com/photo-1547153760-18fc86324498?q=80&w=1200"
-      statsImage="https://images.unsplash.com/photo-1547153760-18fc86324498?q=80&w=1200"
+      statsImage="/132.jpeg"
     />
     </div>
   );

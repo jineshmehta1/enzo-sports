@@ -55,7 +55,7 @@ const MeetOurCoaches: React.FC = () => {
                 Executive Leadership
               </span>
             </div>
-            <h2 className="text-4xl md:text-7xl font-black text-[#0a1128] uppercase italic tracking-tighter leading-[0.9]">
+            <h2 className="text-3xl md:text-5xl font-black text-[#0a1128] uppercase italic tracking-tighter leading-[0.9]">
               Meet The <span className="text-[#d31d24] not-italic">Elite Team</span>
             </h2>
             <p className="text-slate-500 font-medium text-sm md:text-lg max-w-2xl leading-relaxed">

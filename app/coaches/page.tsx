@@ -55,7 +55,7 @@ export default function CoachesPage() {
                   Performance Standards
                 </span>
               </div>
-              <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-white uppercase italic tracking-tighter leading-none">
+              <h2 className="text-3xl md:text-5xl lg:text-5xl font-black text-white uppercase italic tracking-tighter leading-none">
                 The Enzo <span className="text-[#0066FF] not-italic">Edge.</span>
               </h2>
             </div>
@@ -114,7 +114,7 @@ export default function CoachesPage() {
                         <Award size={14} className="text-[#0066FF]" />
                         <span className="text-[10px] font-black uppercase tracking-[0.2em] text-[#0a1128]">Enrollment Open 2024</span>
                     </div>
-                    <h2 className="text-4xl md:text-7xl font-black text-[#0a1128] uppercase italic tracking-tighter leading-[0.9]">
+                    <h2 className="text-3xl md:text-5xl font-black text-[#0a1128] uppercase italic tracking-tighter leading-[0.9]">
                       Ready to <span className="text-[#0066FF] not-italic">Level Up?</span>
                     </h2>
                     <p className="text-base md:text-xl text-slate-500 font-bold max-w-2xl mx-auto leading-relaxed">

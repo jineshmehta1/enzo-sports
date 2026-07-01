@@ -24,7 +24,7 @@ const FounderSection: React.FC = () => {
                 <img 
                   src="/prashant.png" 
                   alt="Prashanth M - Director"
-                  className="w-full h-full object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-105"
+                  className="w-full h-full object-cover object-top group-hover:grayscale-0 transition-all duration-1000 group-hover:scale-105"
                 />
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0a1128]/90 via-transparent to-transparent opacity-60 group-hover:opacity-40 transition-opacity" />
@@ -56,7 +56,7 @@ const FounderSection: React.FC = () => {
                 <span className="text-[10px] md:text-[11px] font-black uppercase tracking-[0.4em] text-[#0066FF]">The Visionary</span>
               </div>
               
-              <h2 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black text-[#0a1128] leading-[1] md:leading-[0.9] uppercase italic tracking-tighter">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-5xl font-black text-[#0a1128] leading-[1] md:leading-[0.9] uppercase italic tracking-tighter">
                 Leadership Built <br className="hidden sm:block" />
                 On <span className="text-[#d31d24] not-italic">Discipline.</span>
               </h2>

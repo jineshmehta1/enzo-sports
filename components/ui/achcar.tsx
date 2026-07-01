@@ -19,7 +19,7 @@ const AchievementCarousel: React.FC = () => {
             </span>
             <Trophy className="text-[#d31d24] w-5 h-5" />
           </div>
-          <h2 className="text-4xl md:text-6xl font-black text-[#0a1128] uppercase italic tracking-tighter">
+          <h2 className="text-3xl md:text-5xl font-black text-[#0a1128] uppercase italic tracking-tighter">
             Our Hall of <span className="text-[#0066FF] not-italic">Champions</span>
           </h2>
           <div className="w-24 h-1.5 bg-[#d31d24] rounded-full" />

@@ -10,13 +10,13 @@ const levels = [
     age: "5-7 Years",
     level: "Kickstarters",
     desc: "Fun games, basic dribbling and coordination.",
-    img: "https://images.unsplash.com/photo-1518091043644-c1d44570a2c9?q=80&w=600"
+    img: "/kick.jpg"
   },
   {
     age: "8-11 Years",
     level: "Development",
     desc: "Passing, shooting, and basic positional play.",
-    img: "https://images.unsplash.com/photo-1538356111053-748a48e1acb8?q=80&w=600"
+    img: "/dve.jpg"
   },
   {
     age: "12-14 Years",
@@ -28,7 +28,7 @@ const levels = [
     age: "15+ Years",
     level: "Elite Squad",
     desc: "Match fitness, systems of play and exposure.",
-    img: "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?q=80&w=600"
+    img: "/elite.jpeg"
   }
 ];
 
@@ -102,12 +102,12 @@ const highlights = [
 ];
 
 const highlightGifs = [
-  "https://media.giphy.com/media/l41lFw057lAJQMwg0/giphy.gif",
-  "https://media.giphy.com/media/3o7TKSjRrfIPjeiVyM/giphy.gif",
-  "https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif",
-  "https://media.giphy.com/media/26AHONQ79FdWZhAIw/giphy.gif",
-  "https://media.giphy.com/media/l0HlSi3AIOM3fAhX2/giphy.gif",
-  "https://media.giphy.com/media/3oEduUy2KjJbH30BNe/giphy.gif"
+ "/prof.jpg",
+  "/small.jpg",
+  "/creative.png",
+  "/focus.png",
+  "/skill.png",
+  "/tour.jpg"
 ];
 
 export default function FootballProgramPage() {
@@ -126,8 +126,8 @@ export default function FootballProgramPage() {
       levels={levels}
       curriculum={curriculum}
       faqData={faqData}
-      faqImage="https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=1200"
-      statsImage="https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=1200"
+      faqImage="/foot2.jpg"
+      statsImage="/foot.jpg"
     />
     </div>
   );

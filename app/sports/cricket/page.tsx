@@ -10,25 +10,25 @@ const levels = [
     age: "6-9 Years",
     level: "Grassroots",
     desc: "Basic grip, stance, and soft-ball cricket.",
-    img: "https://images.unsplash.com/photo-1624526267942-ab0f0b080613?q=80&w=600"
+    img: "/cric1.jpeg"
   },
   {
     age: "10-13 Years",
     level: "Challengers",
     desc: "Hard-ball transition, basic bowling actions.",
-    img: "https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?q=80&w=600"
+    img: "/cric2.webp"
   },
   {
     age: "14-16 Years",
     level: "State Prep",
     desc: "Advanced strokeplay and variations in bowling.",
-    img: "https://images.unsplash.com/photo-1599304911299-813470817c91?q=80&w=600"
+    img: "/cric3.jpeg"
   },
   {
     age: "17+ Years",
     level: "Premier",
     desc: "Professional conditioning and tactical acumen.",
-    img: "https://images.unsplash.com/photo-1589802829985-817e51171b92?q=80&w=600"
+    img: "/cric4.jpg"
   }
 ];
 
@@ -102,12 +102,12 @@ const highlights = [
 ];
 
 const highlightGifs = [
-  "https://media.giphy.com/media/l41lFw057lAJQMwg0/giphy.gif",
-  "https://media.giphy.com/media/3o7TKSjRrfIPjeiVyM/giphy.gif",
-  "https://media.giphy.com/media/xT9IgzoKnwFNmISR8I/giphy.gif",
-  "https://media.giphy.com/media/26AHONQ79FdWZhAIw/giphy.gif",
-  "https://media.giphy.com/media/l0HlSi3AIOM3fAhX2/giphy.gif",
-  "https://media.giphy.com/media/3oEduUy2KjJbH30BNe/giphy.gif"
+  "/prof.jpg",
+  "/small.jpg",
+  "/creative.png",
+  "/focus.png",
+  "/skill.png",
+  "/tour.jpg"
 ];
 
 export default function CricketProgramPage() {
@@ -127,7 +127,7 @@ export default function CricketProgramPage() {
       curriculum={curriculum}
       faqData={faqData}
       faqImage="https://images.unsplash.com/photo-1531415074968-036ba1b575da?q=80&w=1200"
-      statsImage="https://images.unsplash.com/photo-1531415074968-036ba1b575da?q=80&w=1200"
+      statsImage="/acad.jpeg"
     />
     </div>
   );

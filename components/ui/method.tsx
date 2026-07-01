@@ -75,7 +75,7 @@ const CoachingMethodology: React.FC = () => {
             </span>
             <span className="w-8 md:w-12 h-[2px] bg-[#d31d24]" />
           </div>
-          <h2 className="text-4xl md:text-7xl font-black text-[#0a1128] uppercase italic tracking-tighter leading-none">
+          <h2 className="text-3xl md:text-5xl font-black text-[#0a1128] uppercase italic tracking-tighter leading-none">
             Training <span className="text-[#0066FF] not-italic">Pipeline</span>
           </h2>
           <p className="text-slate-500 font-bold uppercase tracking-widest text-[9px] md:text-[11px] max-w-2xl mx-auto">

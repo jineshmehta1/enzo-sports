@@ -12,10 +12,10 @@ const EliteWhiteMosaicHero: React.FC = () => {
   const bgImages = Array.from({ length: 32 }, (_, i) => `/a${(i % 30) + 1}.jpeg`);
 
   return (
-    <section className="pt-15 relative w-full h-screen min-h-[700px] flex items-center justify-center overflow-hidden bg-white">
+    <section className="pt-5 md:pt-15 relative w-full h-screen min-h-[700px] flex items-center justify-center overflow-hidden bg-white">
       
       {/* --- 1. BACKGROUND IMAGE MOSAIC (Netflix Style) --- */}
-      <div className="absolute inset-0 z-0 opacity-20 pointer-events-none select-none">
+      <div className="absolute inset-0 z-0 opacity-40 pointer-events-none select-none">
         <div className="grid grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-3 p-4 scale-110 -rotate-2">
           {bgImages.map((src, idx) => (
             <div 
